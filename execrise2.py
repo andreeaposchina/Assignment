@@ -26,3 +26,7 @@ def frame_words(list_of_words: list) -> str:
 
 
 print(frame_words(["Hello", "World", "in", "a", "frame"]))
+
+print(frame_words([""]))
+
+print(frame_words(["I", "Framed", "all", "words", "from", "this", "list"]))

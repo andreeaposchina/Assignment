@@ -9,11 +9,8 @@ def remove_duplicates(list_of_duplicates: list) -> list:
     returned_list = []
 
     for element in list_without_duplicates:
-        if isinstance(element, int) or isinstance(element, float):
-            if isinstance(element, bool):
-                continue
-            else:
-                returned_list.append(element)
+        if isinstance(element, (int, float)) and not isinstance(element, bool):
+            returned_list.append(element)
 
     return returned_list
 
